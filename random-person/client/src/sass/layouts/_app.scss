@@ -1,0 +1,118 @@
+.btn {
+}
+.btn:hover {
+}
+/* section */
+.section {
+  padding: 5rem 0;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
+/* container */
+.block {
+  min-height: 50vh;
+}
+.bcg-black {
+  background-color: $blueGray-800;
+}
+
+.container {
+  width: 90vw;
+  max-width: 768px;
+  background-color: $blueGray-500;
+  margin: 0 auto;
+  margin-top: -30vh;
+  position: relative;
+  padding: 4vh;
+  text-align: center;
+  border-radius: 4vh;
+}
+
+.container::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  // background-color: $blueGray-300;
+  border-bottom: 0.3vh solid $teal-900;
+}
+
+.container img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.user-title {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: $coolGray-900;
+  line-height: 1.8;
+}
+.user-value {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.1;
+  color: $coolGray-900;
+}
+.values-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  place-items: center;
+}
+.icon {
+  background: transparent;
+  border: none;
+  color: $coolGray-900;
+  cursor: pointer;
+  transition: 0.4s;
+  line-height: 1.8;
+
+  &:hover {
+    color: $indigo-700;
+  }
+}
+
+.active {
+  color: $lime-500;
+}
+.btn {
+  width: 45vw;
+  padding: 0.5rem;
+  border-radius: 4vh;
+  border: none;
+  background: $indigo-700;
+  transition: 0.5s;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  &:hover {
+    background: $teal-700;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .user-value {
+    font-size: 2rem;
+  }
+  .icon {
+    font-size: 2rem;
+  }
+  .btn {
+    width: 15vw;
+  }
+}

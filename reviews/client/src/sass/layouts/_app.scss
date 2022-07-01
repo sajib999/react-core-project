@@ -1,0 +1,157 @@
+//// section
+
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: $max-width;
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+
+// App
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.container {
+  text-align: center;
+  width: 80vw;
+  max-width: $fixed-width;
+  background-color: $blueGray-900;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  .title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: $blueGray-100;
+  }
+  .underline {
+    width: 6rem;
+    height: 0.5rem;
+    background-color: $teal-600;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+}
+
+// Review
+.review {
+  &:hover {
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
+  }
+  .img-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  .person-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .quote-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: $teal-400;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: $teal-100;
+  }
+  .author {
+    font-size: 1.1rem;
+    font-weight: semibold;
+    color: $blueGray-800;
+    text-transform: uppercase;
+  }
+  .job {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: $teal-800;
+    margin: 0.3rem 0;
+    display: block;
+  }
+  .info {
+    font-size: 0.9rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    color: $gray-600;
+  }
+  .button-container {
+    padding: 1rem 0;
+  }
+  .prev-btn {
+    background-color: $teal-400;
+    color: $teal-100;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px 0 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: $teal-900;
+      outline-offset: 2px;
+      outline: 2px solid $teal-900;
+    }
+  }
+  .next-btn {
+    background-color: $teal-400;
+    color: $teal-100;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: $teal-900;
+      outline-offset: 2px;
+      outline: 2px solid $teal-900;
+    }
+  }
+  .random-btn {
+    margin: 0 0 1rem 0;
+    width: 130px;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: $teal-500;
+    color: $teal-100;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    outline-offset: 2px;
+    outline: 2px solid $teal-900;
+
+    &:hover {
+      background-color: $teal-900;
+    }
+  }
+}

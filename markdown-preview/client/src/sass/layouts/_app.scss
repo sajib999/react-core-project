@@ -1,0 +1,48 @@
+/* section */
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: $max-width;
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+
+/*
+    =============== 
+    Markdown
+    ===============
+    */
+.markdown {
+  padding: 4vh;
+  display: grid;
+  row-gap: 4vh;
+}
+.input {
+}
+.input,
+.result {
+  border: 1vh solid teal;
+  height: 40vh;
+  margin: 4vh;
+  font-size: 1.3rem;
+  padding: 4vh;
+  border-radius: 2vh;
+  text-transform: capitalize;
+  line-height: 6vh;
+  resize: none;
+}
+
+@media screen and (min-width: 992px) {
+  .markdown {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4vh;
+  }
+  .input,
+  .result {
+    min-height: calc((100vh - (4vh * 2) - (4vh * 2)));
+  }
+}

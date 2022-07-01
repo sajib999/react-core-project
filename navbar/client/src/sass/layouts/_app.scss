@@ -1,0 +1,134 @@
+// Section
+
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 95vw;
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+
+// App
+// Nothin
+
+// Navbar
+nav {
+  background-color: $blueGray-600;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.2);
+  .nav-center {
+  }
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  .logo {
+    color: $teal-500;
+    font-size: 1.3rem;
+    height: 40px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    padding: 1rem;
+    &:hover {
+      color: $rose-700;
+    }
+  }
+  .nav-toggle {
+    padding: 0.5rem;
+    background-color: $teal-900;
+    border: transparent;
+    color: $rose-200;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      transform: rotate(90deg);
+      background-color: $rose-900;
+    }
+  }
+  .links-container {
+    height: auto;
+    overflow: hidden;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    a {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+      color: $teal-500;
+      text-transform: capitalize;
+      display: block;
+    }
+  }
+
+  .social-icons {
+    display: none;
+  }
+}
+// .show-container {
+//   height: 10rem;
+// }
+
+// Responsive
+
+@media screen and (min-width: 800px) {
+  nav {
+    .nav-center {
+      width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      margin: 0 auto;
+    }
+    .nav-header {
+      padding: 0;
+    }
+    .logo {
+      height: 50px;
+    }
+    .nav-toggle {
+      display: none;
+    }
+    .links-container {
+      height: auto !important;
+    }
+    .links {
+      display: flex;
+      flex-direction: row;
+
+      a {
+        font-size: 0.9rem;
+        padding: 0rem 1rem;
+        color: $teal-500;
+        text-transform: capitalize;
+
+        transition: 0.5s;
+        &:hover {
+          color: $rose-600;
+        }
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      a {
+        font-size: 0.9rem;
+        padding: 1rem 1rem;
+        color: $teal-500;
+        text-transform: capitalize;
+        transition: 0.5s;
+
+        &:hover {
+          color: $rose-600;
+        }
+      }
+    }
+  }
+}

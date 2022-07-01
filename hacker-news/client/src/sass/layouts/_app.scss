@@ -1,0 +1,173 @@
+/* section */
+.section {
+  width: 90vw;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+
+/*
+    =============== 
+    Search
+    ===============
+    */
+
+.search-form {
+  padding: 6vh;
+  max-width: 60vw;
+  h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    color: $lime-600;
+    margin-bottom: 1rem;
+  }
+  .form-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 0.4vh solid $lime-600;
+
+    &:hover,
+    :focus-visible {
+      border: 0.4vh solid $lime-600;
+    }
+  }
+}
+
+/*
+    =============== 
+    Buttons
+    ===============
+    */
+
+.btn-container {
+  padding: 6vh;
+  display: flex;
+  justify-content: center;
+
+  button {
+    width: 100px;
+    padding: 0.4rem;
+    font-size: 0.9rem;
+    background-color: $lime-600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: 0.5s;
+
+    &:hover {
+      outline: 0.1rem solid $rose-800;
+      outline-offset: 0.2rem;
+    }
+  }
+  p {
+    margin: 0 3vh;
+    background-color: $teal-600;
+    padding: 0.5rem;
+    color: #fff;
+  }
+}
+
+/*
+    =============== 
+    Spinner
+    ===============
+    */
+// .spinner-container {
+//   position: relative;
+// }
+// @keyframes spinner {
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
+
+// .loading {
+//   width: 6rem;
+//   height: 6rem;
+//   margin: 0 auto;
+//   margin-top: 10rem;
+//   border-radius: 50%;
+//   border: 3px solid #ccc;
+//   border-top-color: var(--clr-primary-5);
+//   animation: spinner 0.6s linear infinite;
+// }
+
+/*
+    =============== 
+    Story
+    ===============
+    */
+
+.stories {
+  padding: 6vh;
+  gap: 4vh;
+  .story {
+    margin: 1vh 0;
+    background-color: $blueGray-900;
+    padding: 4vh;
+  }
+  .title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: $blueGray-900;
+    color: rgba(255, 255, 255, 0.849);
+  }
+  .info {
+    font-size: 0.9rem;
+    padding: 2vh 0;
+    color: rgba(255, 255, 255, 0.849);
+  }
+  .btn-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20vw;
+  }
+  .read-link {
+    width: 100px;
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    background-color: $lime-600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: 0.5s;
+    margin: 0 1rem 0 0;
+    text-align: center;
+
+    &:hover {
+      outline: 0.1rem solid $rose-800;
+      outline-offset: 0.2rem;
+    }
+  }
+  .remove-btn {
+    width: 100px;
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    background-color: $teal-600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: 0.5s;
+
+    &:hover {
+      outline: 0.1rem solid $rose-800;
+      outline-offset: 0.2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .stories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

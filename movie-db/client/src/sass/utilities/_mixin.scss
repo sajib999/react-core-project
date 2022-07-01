@@ -1,0 +1,17 @@
+// Center
+@mixin displayPropertiesCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+//  @include displayPropertiesCenter() ;
+
+// Space between
+@mixin displayPropertiesBetween() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+//  @include displayPropertiesBetween() ;

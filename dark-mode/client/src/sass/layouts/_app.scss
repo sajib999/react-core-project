@@ -1,0 +1,55 @@
+// App
+
+main {
+  padding: 10vh 4vh;
+}
+.nav-center {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  max-width: 60vw;
+  margin: 0 auto;
+  h2 {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    color: $teal-600;
+  }
+  .btn {
+    width: 120px;
+    padding: 0.5rem 0;
+    background-color: $teal-900;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: normal;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $lime-900;
+    }
+  }
+}
+
+.articles {
+  max-width: 60vw;
+  margin: 6vh auto;
+}
+
+// Article
+.post {
+  margin: 6vh 0;
+  h2 {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+  }
+  .post-info {
+    margin: 0.3rem 0;
+  }
+  span {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}

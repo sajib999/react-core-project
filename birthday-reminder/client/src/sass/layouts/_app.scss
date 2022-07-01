@@ -1,0 +1,84 @@
+section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: $max-width;
+}
+
+@media screen and (min-weight: 992px) {
+  section {
+    width: 95px;
+  }
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: $fixed-width;
+  margin: 5rem 0;
+  background-color: $coolGray-500;
+  color: $gray-300;
+  padding: 2rem;
+  border-radius: map-get($border-radius, rounded-md);
+
+  h1 {
+    font-size: map-get($font-size, text-5xl);
+    font-weight: map-get($font-weight, font-semibold);
+    margin-bottom: 2rem;
+    color: $blueGray-900;
+  }
+  button {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: map-get($border-radius, rounded-md);
+    border: none;
+    background-color: $blueGray-800;
+    color: $coolGray-100;
+    text-transform: uppercase;
+    font-size: map-get($font-size, text-xl);
+    font-weight: map-get($font-weight, font-semibold);
+    cursor: pointer;
+    outline: 1px solid $teal-500;
+    transition: map-get($transition, transition-500);
+
+    &:hover {
+      background-color: $blueGray-600;
+      color: $teal-300;
+    }
+  }
+}
+
+// List
+
+.person {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 1rem;
+  margin-bottom: 1.3rem;
+  img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: map-get($border-radius, rounded-full);
+    cursor: pointer;
+  }
+
+  h3 {
+    font-size: map-get($font-size, text-xl);
+    font-weight: map-get($font-weight, font-semibold);
+    color: $blueGray-900;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  h4 {
+    font-size: map-get($font-size, text-xl);
+    font-weight: map-get($font-weight, font-semibold);
+    color: $blueGray-900;
+  }
+}

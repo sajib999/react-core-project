@@ -1,0 +1,68 @@
+.section {
+  width: 90vw;
+  margin: 2rem auto;
+  max-width: $max-width;
+  min-height: 80vh;
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+
+//  App
+
+.section-center {
+  width: 90vw;
+  margin: 3rem auto;
+  padding: 1.3rem 0;
+  max-width: 750px;
+  background-color: $coolGray-500;
+
+  h3 {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: $teal-900;
+  }
+  .lorem-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  label {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: $teal-900;
+  }
+  input {
+    width: 4rem;
+    margin: 0 1rem;
+    border: 2px solid $teal-900;
+  }
+  .btn {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    background-color: $teal-900;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    outline: 2px solid $teal-900;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: $rose-900;
+    }
+  }
+  .lorem-text {
+    margin: 1rem 0;
+  }
+  p {
+    font-size: 0.9rem;
+
+    margin: 1rem 0;
+  }
+}

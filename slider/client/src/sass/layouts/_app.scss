@@ -1,0 +1,128 @@
+// Section
+
+.section {
+  width: 90vw;
+  margin: 3rem auto;
+  max-width: $max-width;
+}
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+
+// App
+.section {
+  background-color: $blueGray-300;
+  padding: 2rem 0;
+  .title {
+    text-align: center;
+  }
+  h2 {
+    font-size: 2rem;
+    color: $coolGray-700;
+  }
+  span {
+    color: $teal-500;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  // section center
+  .section-center {
+    width: 80vw;
+    height: 450px;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 2rem;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    // background-color: $blueGray-500;
+  }
+  // Article
+  .person-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+  h4 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .author {
+    font-size: 1rem;
+    color: $teal-900;
+    margin: 1rem 0;
+    text-transform: capitalize;
+  }
+  .text {
+    width: 50vw;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    color: $blueGray-900;
+    line-height: 1.5rem;
+  }
+  .icon {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $teal-900;
+    cursor: pointer;
+  }
+  // Button
+  .prev,
+  .next {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 200px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 2px solid $cyan-900;
+    color: $teal-900;
+    font-size: 2rem;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: 0.1s;
+    &:hover {
+      background-color: $teal-500;
+    }
+  }
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+}
+
+// // slide
+// // Article
+article {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s;
+  background-color: $blueGray-500;
+  &.nextSlide {
+    transform: translateX(100%);
+  }
+  &.activeSlide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  &.lastSlide {
+    transform: translateX(-100%);
+  }
+}
